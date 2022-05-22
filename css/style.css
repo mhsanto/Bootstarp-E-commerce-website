@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+}
+body{
+    font-family: var(--sm-font);
+}
+/* buttons */
+.btn:not(.nav-btns button) {
+    background: #fff;
+    color: rgb(85, 85, 85);
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+
+}
+
+.btn:not(.nav-btns button):hover {
+    background: var(--pink);
+    color: #fff;
+}
+
+/* navbar starts */
+.navbar {
+    box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 30px;
+
+}
+
+.navbar-brand span {
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+.nav-link:hover {
+    color: var(--pink) !important;
+}
+
+.nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+
+}
+
+/* navbar ends */
+
+/* header starts */
+#header {
+    background-image: url(../images/banner-img-1.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.carousel-inner h1 {
+    font-family: var(--lg-font);
+    font-size: 70px;
+    color: white;
+    letter-spacing: 8px;
+}
+
+.carousel-inner h2 {
+    font-size: 2rem;
+}
+
+.carousel-item .btn {
+    border-color: white !important;
+    font-family: var(--sm-font);
+    padding: 10px 22px;
+}
+
+.carousel-item .btn:hover {
+    background: var(--pink);
+}
+
+@media (min-width:992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}
+
+/* header ends */
+/* collection starts */
+.title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.active-filter-btn {
+    background-color: var(--pink) !important;
+    color: white !important;
+    border: none !important;
+}
+
+.row button {
+    padding: 10px 29px;
+    font-family: var(--sm-font);
+    transition: .5s;
+}
+
+.row button:hover {
+    color: white !important;
+}
+
+.collection-img span {
+    top: 10px;
+    right: 10px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    color: white;
+    font-family: var(--sm-font);
+}
+
+.collection-img .bg-primary {
+    background-color: var(--pink) !important;
+}
+
+span i {
+    color: var(--pink) !important;
+}
+
+.collection-list .hover-effect {
+    cursor: pointer;
+    font-family: var(--sm-font);
+    padding: 10px !important;
+    transition: .5s;
+
+}
+
+.collection-list .hover-effect:hover {
+    transform: scale(1.1);
+
+}
+
+/* collection ends */
+/* special collection starts */
+.special-image img {
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.special-image:hover img {
+    transform: scale(1.2);
+}
+
+.special-image span {
+    top: 10px;
+    right: 20px;
+}
+
+.special-list span {
+    font-family: var(--sm-font);
+    padding: 8px;
+}
+
+/* special ends */
+#offer .row{
+    height: 60vh;
+}
+#offer {
+    background-image: url(../images/offer_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+#offer .contents h3 {
+    font-family: var(--sm-font);
+}
+
+#offer .contents h1 {
+    font-family: var(--lg-font);
+    font-size: 50px;
+}
+
+#offer .contents .btn {
+    border: none !important;
+    font-family: var(--sm-font);
+}
+
+/* blogs starts here */
+#blogs .card{
+    font-family: var(--sm-font);
+    transition: all .5s ease;
+    cursor: pointer;
+}
+#blogs .card:hover{
+    transform: scale(1.07);
+}
+ /* about us starts here */
+ #about{
+     background-color: rgba(179,179,179,0.08);
+ }
+ /* newsletter starts */
+ #newsletter{
+     background-color: rgba(179,179,179,0.08);
+
+ }
+ #newsletter p{
+     max-width: 600px;
+     padding: 20px 0;
+ }
+ .input-group{
+     max-width: 600px;
+     padding: 15px;
+ }
+ .form-control{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 12px;
+ }
+ #newsletter .btn{
+     background-color: var(--pink);
+     color: white;
+     border: var(--pink);
+ }
+ #newsletter .btn:hover{
+     background-color: black;
+
+ }
+ footer .footer-sec a{
+     letter-spacing: 2px;
+     font-family: var(--lg-font);
+  
+ }
