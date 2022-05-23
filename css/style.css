@@ -82,11 +82,7 @@ body{
     background: var(--pink);
 }
 
-@media (min-width:992px) {
-    .nav-item {
-        border-bottom: none;
-    }
-}
+
 
 /* header ends */
 /* collection starts */
@@ -239,3 +235,9 @@ span i {
      font-family: var(--lg-font);
   
  }
+
+@media (min-width:992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}
