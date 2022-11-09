@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 html {
     scroll-behavior: smooth;
 }
@@ -35,7 +35,9 @@ body{
     width: 30px;
 
 }
-
+a{
+    text-decoration: none !important;
+}
 .navbar-brand span {
     font-family: var(--lg-font);
     letter-spacing: 2px;
@@ -49,13 +51,50 @@ body{
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 
 }
+.logo h2 {
+  font-family: "Montserrat", sans-serif;
+
+    color: #07242d;
+    letter-spacing: 1.5px;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+   .logo .S {
+    position: relative;
+    font-size: 35px;
+    color: red;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+   .logo .T {
+    width: 108px;
+    height: 4px;
+    background-color: #07242d;
+    border-radius: 20px;
+    position: absolute;
+    left: 6.8%;
+    top: 21%;
+
+  }
+   .logo .T::before {
+    content: "";
+    width: 4px;
+    height: 29px;
+    background-color: #07242d;
+    position: absolute;
+    left: 63%;
+    top: 60%;
+    border-radius: 20px;
+    z-index: -1;
+  }
 
 /* navbar ends */
 
 /* header starts */
 #header {
-    background-image: url(../images/banner-img-1.jpg);
-    background-position: top;
+    background-image: url("https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -170,11 +209,11 @@ span i {
     height: 60vh;
 }
 #offer {
-    background-image: url(../images/offer_img.jpg);
+    background-image: url("https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-position: top;
+    height: 80vh;
 }
 #offer .contents h3 {
     font-family: var(--sm-font);
